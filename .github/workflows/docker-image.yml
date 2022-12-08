@@ -14,9 +14,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build ./api --build-arg app_env=production; docker build ./frontend --build-arg app_env=production; docker build ./db
-    
-    - uses: actions/checkout@v3
     - name: Start the Docker
       run: docker-compose up
