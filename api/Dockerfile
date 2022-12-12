@@ -16,7 +16,6 @@ RUN go get -u gorm.io/gorm
 RUN go get "github.com/jinzhu/gorm/dialects/postgres"
 RUN go get "time"
 
-RUN go get "database/sql"
 RUN go get "encoding/json"
 RUN go get "fmt"
 RUN go get "github.com/julienschmidt/httprouter"
