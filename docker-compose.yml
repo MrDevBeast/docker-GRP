@@ -1,6 +1,7 @@
 version: '2'
 services:
   db:
+    image: firstdocker
     build: ./db
     volumes:
       - ./db/pgdata:/pgdata
@@ -12,6 +13,7 @@ services:
       - PGDATA=/pgdata
 
   api:
+    image: firstdocker
     build:
       context: ./api
       args:
@@ -24,6 +26,7 @@ services:
       - db
 
   frontend:
+    image: firstdocker
     build:
       context: ./frontend
       args:
