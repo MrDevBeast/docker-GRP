@@ -1,7 +1,7 @@
 package main
 
 import (
-	"database"
+	"api/pkg/database"
 	"encoding/json"
 	"fmt"
 	"github.com/julienschmidt/httprouter"
