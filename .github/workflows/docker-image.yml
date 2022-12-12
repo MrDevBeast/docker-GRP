@@ -27,4 +27,4 @@ jobs:
       run: docker compose build --build-arg app_env=production
     -
       name: Push Docker
-      run: docker push -a firstDocker
+      run: docker push -a firstdocker
