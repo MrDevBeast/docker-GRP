@@ -1,5 +1,5 @@
-# GoDoRP
-GoDoRP (Golang, Docker, React, Postgres) project starter.
+# GoDoRP with Docker CI/CD
+GoDoRP (Golang, Docker, React, Postgres, CI/CD) project starter.
 
 Disclaimer: This project is not actively supported and not recommended for production apps. Hope it serves as a learning resource.
 
