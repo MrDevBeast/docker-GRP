@@ -26,8 +26,5 @@ jobs:
       name: Build docker
       run: docker compose build --build-arg app_env=production
     -
-      name: Show directory
-      run: ll -a
-    -
       name: Push Docker
       run: docker push -a firstdocker
