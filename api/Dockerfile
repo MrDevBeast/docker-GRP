@@ -11,7 +11,7 @@ COPY . /go/src/github.com/user/GoDoRP/api
 WORKDIR /go/src/github.com/user/GoDoRP/api
 
 # added vendor services will need to be included here
-RUN go mod init
+RUN go mod init api
 RUN go get ./pkg/database
 
 RUN go get ./
