@@ -18,7 +18,6 @@ RUN go get "time"
 
 RUN go get "database/sql"
 RUN go get "encoding/json"
-RUN go get "fmt"
 RUN go get "github.com/julienschmidt/httprouter"
 RUN go get "log"
 RUN go get "net/http"
