@@ -18,10 +18,12 @@ RUN go get "time"
 
 RUN go get "database/sql"
 RUN go get "encoding/json"
+RUN go get "fmt"
 RUN go get "github.com/julienschmidt/httprouter"
 RUN go get "log"
 RUN go get "net/http"
 RUN go get "os"
+RUN go mod vendor
 RUN go build
 
 # if dev setting will use pilu/fresh for code reloading via docker-compose volume sharing with local machine
