@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/jinzhu/gorm"
+	"github.com/go-gorm/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"time"
 )
