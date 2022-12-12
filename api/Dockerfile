@@ -12,9 +12,9 @@ WORKDIR /go/src/github.com/user/GoDoRP/api
 
 # added vendor services will need to be included here
 RUN go mod init
-RUN go install ./vendor/database
+RUN go get ./vendor/database
 
-RUN go install ./
+RUN go get ./
 RUN go build
 
 # if dev setting will use pilu/fresh for code reloading via docker-compose volume sharing with local machine
