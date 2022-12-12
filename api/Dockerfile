@@ -22,7 +22,7 @@ CMD if [ ${APP_ENV} = production ]; \
 	then \
 	api; \
 	else \
-	go get github.com/pilu/fresh && \
+	go install github.com/pilu/fresh && \
 	fresh; \
 	fi
 	
