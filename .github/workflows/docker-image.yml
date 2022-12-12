@@ -39,4 +39,4 @@ jobs:
       run: docker tag firstdocker ${{ secrets.DOCKER_HUB_USERNAME }}/firstdocker
     -
       name: Push Docker
-      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/firstdocker
+      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/golangdocker:${{ secrets.DOCKER_HUB_USERNAME }}/firstdocker
