@@ -22,7 +22,7 @@ RUN go get "github.com/julienschmidt/httprouter"
 RUN go get "log"
 RUN go get "net/http"
 RUN go get "os"
-RUN go mod vender
+RUN go mod vendor
 RUN go build
 
 # if dev setting will use pilu/fresh for code reloading via docker-compose volume sharing with local machine
