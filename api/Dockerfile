@@ -12,9 +12,17 @@ WORKDIR /go/src/github.com/user/GoDoRP/api
 
 # added vendor services will need to be included here
 RUN go mod init
-RUN go get ./vendor/database
+RUN go get -u gorm.io/gorm
+RUN go get "github.com/jinzhu/gorm/dialects/postgres"
+RUN go get "time"
 
-RUN go get ./
+RUN go get "database"
+RUN go get "encoding/json"
+RUN go get "fmt"
+RUN go get "github.com/julienschmidt/httprouter"
+RUN go get "log"
+RUN go get "net/http"
+RUN go get "os"
 RUN go build
 
 # if dev setting will use pilu/fresh for code reloading via docker-compose volume sharing with local machine
