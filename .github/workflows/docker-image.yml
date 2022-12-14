@@ -40,3 +40,6 @@ jobs:
     -
       name: Push Docker
       run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/firstdocker
+    -
+      name: Show
+      run: docker-compose up
